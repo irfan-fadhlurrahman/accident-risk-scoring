@@ -6,6 +6,7 @@ As stated by IBEF, in the fiscal year between 2016 and 2020, domestic automobile
 
 ## Objective
 The aim of this project is to predict the Accident Risk Index that is the average of casualties per postal code, based on location, time, and other conditions data.
+This is a regression task, which predicts the continuous value target. To evaluate the model performance, root mean squared error (RMSE) will be used.
 
 ## Benefit
 Being able to calculate the risk of accidents in each postal code region, the insurance company can reduce the losses due to the surging rise in insurance claims.
