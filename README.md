@@ -20,7 +20,7 @@ The train and test dataset have 600,000 total observations with ratio 80% train 
 #### Distribution
 * The date range of all accidents in the UK are from January 1st, 2012 to December 31st, 2012.
 * More than 50% of total accidents happen on weekends with 30% happening on saturday.
-* Number of accidents start to increase after 7 am with peaks between 3pm and 4pm and start to decrease at midnight (12 pm).
+* Number of accidents start to increase after 7 am with peaks between 2pm and 6pm and start to decrease at midnight (12 pm).
 * Number of vehicles that were involved in accidents varied from 1 to 4 with approximately 93% of total accidents involving at least one vehicle.
 * 68.9% of total accidents occured in the road with speed limit 30, while only 3.4% accidents occurred with speed limit 70.
 * Around 68% accidents caused only one casualty, while almost 21% accidents caused two casualties.
@@ -28,11 +28,10 @@ The train and test dataset have 600,000 total observations with ratio 80% train 
 * Around 85% accidents occur when there are no physical crossing within 50 meters.
 * Almost 80% of total accidents happen when the street light is present, while only less than 7% accidents happen when there are no street lights or the street lights are unknown.
 * Weather conditions are mostly fine without high winds in 79.3% of total accidents and around 15% happen when it is raining.
-* The road surface conditions are dry when approximately 77% accidents occured, while 18% accidents occured when the road is wet or damp.
+* The road surface condition is dry when approximately 77% accidents occured, while 18% accidents occured when the road is wet or damp.
 * Most accidents happen when there are no special conditions on the road and no carriageway hazards present. They accounted for 89.4% and 96% observations respectively.
 * 60% of total accidents happen in urban areas.
-* Police officers attend the scene of accidents for 81.7% of total accidents.
-
+* Police officers attend the scene of accidents 81.7% of the time.
 
 #### Recommendation
 * Charge more to the people who subscribe the insurance if they have similar attributes or profiles with the one who has a higher accident risk index, so that the insurance company can reduce the losses if the insurance claims are increasing in certain regions.
