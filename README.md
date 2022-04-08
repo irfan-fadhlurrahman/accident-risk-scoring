@@ -34,12 +34,13 @@ The train and test dataset have 600,000 total observations with ratio 80% train 
 * Police officers attend the scene of accidents 81.7% of the time.
 
 #### Relationship with target variable
-* Although number of casualties are dependent to accident risk index, the linear correlation shows that between variables do not have a strong correlation (only 0.44)
-* Number of vehicles and speed limit have a very weak correlation to accident risk index with score less than 0.01.
+* Although `number_of_casualties` are dependent to `accident_risk_index`, the linear correlation shows that between variables do not have a very strong correlation (only 0.44)
+* `number_of_vehicles` and `speed_limit` have a very weak correlation to `accident_risk_index` with a score less than 0.01.
 * The result of the ANOVA test between target variable (numerical), which is accident_risk_index and categorical features, shows significant dependence between `accident_risk_index` and almost categorical features except the following features with a significance level set at 0.05:
-  * `pedestrian_crossing_human_control`
-  * `special_conditions_at_site`
-  * `carriageway_hazards`
+   * `pedestrian_crossing_human_control`
+   * `special_conditions_at_site`
+   * `carriageway_hazards`
+
 
 
 #### Recommendation
