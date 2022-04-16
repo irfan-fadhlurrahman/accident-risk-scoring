@@ -9,13 +9,11 @@ This is a regression task, which predicts the continuous value target. To evalua
 Being able to calculate the risk of accidents in each postal code region, the insurance company can reduce the losses due to the surging rise in insurance claims.
 
 ### Data Source
-The dataset can be downloaded from this [link](https://machinehack.com/hackathon/predict_accident_risk_score_for_unique_postcode/overview). This dataset was used for competition in Machine Hack. There are 5 files in the dataset, consisting of train.csv, test.csv, sample_submission.csv and 2 optional files such as population.csv and fileroads_network.csv. To simplify the analysis, the dataset that will be used only train.csv and test.csv. 
+The dataset can be downloaded from this [link](https://machinehack.com/hackathon/predict_accident_risk_score_for_unique_postcode/overview). This dataset was used for competition in Machine Hack. There are 5 files in the dataset, consisting of train.csv, test.csv, sample_submission.csv and 2 optional files such as population.csv and fileroads_network.csv. To simplify the analysis, the dataset that will be used only train.csv
 
 The train and test dataset have 600,000 total observations with ratio 80% train and 20% test set.  There are 27 variables in this dataset. But, in this notebook, I only use 18 variables because 10 other variables do not have a clear explanation and make the model less complex.
 
 ### Exploratory Data Analysis
-#### Target Variable
-* The accident risk index ranges from 1 to 5 with approximately 95% of observations are in range 1 to 2.
 
 #### Distribution
 * The date range of all accidents in the UK are from January 1st, 2012 to December 31st, 2012.
@@ -33,6 +31,9 @@ The train and test dataset have 600,000 total observations with ratio 80% train 
 * 60% of total accidents happen in urban areas.
 * Police officers attend the scene of accidents 81.7% of the time.
 
+#### Target Variable
+* The accident risk index ranges from 1 to 5 with approximately 95% of observations are in range 1 to 2.
+
 #### Relationship with target variable
 * Although `number_of_casualties` are dependent to `accident_risk_index`, the linear correlation shows that between variables do not have a very strong correlation (only 0.44)
 * `number_of_vehicles` and `speed_limit` have a very weak correlation to `accident_risk_index` with a score less than 0.01.
@@ -40,8 +41,6 @@ The train and test dataset have 600,000 total observations with ratio 80% train 
    * `pedestrian_crossing_human_control`
    * `special_conditions_at_site`
    * `carriageway_hazards`
-
-
 
 #### Recommendation
 * Charge more to the people who subscribe the insurance if they have similar attributes or profiles with the one who has a higher accident risk index, so that the insurance company can reduce the losses if the insurance claims are increasing in certain regions.
