@@ -3,4 +3,3 @@ pandas==1.1.5
 matplotlib==3.2.2
 seaborn==0.11.2
 inflection==0.5.1
-xgboost==0.9.0
